@@ -1,8 +1,6 @@
 import React from "react";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import Link, { LinkProps } from "next/link";
-import { clsx } from "clsx";
-import { usePathname } from "next/navigation";
+import Link from "next/link";
 import NavLinks from "../components/NavLinks";
 import SearchBox from "./SearchBox";
 
