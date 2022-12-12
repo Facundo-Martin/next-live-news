@@ -1,4 +1,4 @@
-type DataEntry = {
+type Article = {
   author: string | null;
   category: string;
   country: string;
@@ -20,5 +20,5 @@ type Pagination = {
 
 type NewsResponse = {
   pagination: Pagination;
-  data: DataEntry[];
+  data: Article[];
 };
