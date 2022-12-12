@@ -1,5 +1,7 @@
-import "../styles/globals.css";
+import { categories } from "../constants";
 
-export default function Page() {
-  return <h1 className="text-blue-300 font-bold">Hello, Next.js!</h1>;
+export default async function Homepage() {
+  // fetch news data
+  const news: NewsResponse = await fetchNews(categories.join(","));
+  return <div>Homepage</div>;
 }
