@@ -4,6 +4,7 @@ import Link, { LinkProps } from "next/link";
 import { clsx } from "clsx";
 import { usePathname } from "next/navigation";
 import NavLinks from "../components/NavLinks";
+import SearchBox from "./SearchBox";
 
 export default function Header() {
   return (
@@ -30,6 +31,7 @@ export default function Header() {
       {/* Links */}
       <NavLinks />
       {/* Searchbox */}
+      <SearchBox />
     </header>
   );
 }
